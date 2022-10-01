@@ -131,3 +131,49 @@ Toggles and extras
 { name: "#T-PROBE#", value: "\xA4" },
 ];
 ```
+
+## HPGL
+
+-   \u001b.B : Free Buffer Space : ESC.B
+-   \u001b.K : Abort Graphic Instuction- disacrd data in plotter buffer :  ESC.K
+-   \u001b.L : Total buffer size : ESC.L
+-   \u001b.O :  Output extended status - is usefull for checking if plotter is online and ready. : ESC.O
+           
+            0 - Buffer contains data and plotter is processing these commands
+            8 - Buffer is empty and ready to recieve commands
+            16 - Buffer has data and View buttom has been processed ( plot is paused)
+            24 - Buffer is empty - View button pressed 
+            32 - Buffer has data , Paper is not loaded
+            40 - Buffer is empty , Paper not loaded
+-   \u001b.E : Uutput Extended error info output a decimal code if an RS232 error has occured : ESC.E
+
+        0 - No error
+        10 - querry command recieved wihile another is still processing. Last command will be ignored
+        11 - Invalid ESC command
+        12 - Invald command - incorect HPGL syntax
+        13 - Parameter out of range
+        14 - To many parameters for given commmand
+        15 - Framing error, parity error, or overrunn error
+        16 - Buffer overflow
+
+---
+
+```
+[
+    { name: "ESC.B", value: "\u001b.B", notprintable: true },
+    { name: "ESC.K", value: "\u001b.K", notprintable: true },
+    { name: "ESC.L", value: "\u001b.L", notprintable: true },
+    { name: "ESC.O", value: "\u001b.O", notprintable: true },
+
+
+];
+```
+
+### NOT USED
+
+-   \u001b.H : Set handshake mode 1 - requires ESC.H [DEC];[ASC];[ASC] - Block size for Xoff thershod ;Handshake char ; handshake resposeHandshake char ; handshake respose
+-   \u001b.I : Set handshake mode 2 - requires ESC.I [DEC];[ASC];[ASC] - Block size for Xoff thershod ;Handshake char ; handshake respose
+-   \u001b.Y : Plotter ON : ESC.Y
+-   \u001b.Z : Plotter OFF : ESC.Z
+-   \u001b.@ : Set plotter config : ESC.@ [DEC];[DEC]
+
