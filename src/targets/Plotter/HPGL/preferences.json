@@ -1,0 +1,54 @@
+{
+    "settings": {
+        "status": [
+            {
+                "id": "showstatuspanel",
+                "type": "boolean",
+                "label": "S63",
+                "value": true
+            },
+            {
+                "id": "openstatusonstart",
+                "type": "boolean",
+                "label": "S93",
+                "value": true
+            }
+        ],
+        "jog": [
+            {
+                "id": "home",
+                "type": "group",
+                "label": "CN17",
+                "value": [
+                    {
+                        "id": "homesingleaxis",
+                        "type": "boolean",
+                        "label": "CN16",
+                        "value": false
+                    },
+                    {
+                        "id": "homecmd",
+                        "type": "text",
+                        "label": "CN10",
+                        "value": "$H#",
+                        "help": "CN11"
+                    }
+                ]
+            },
+            {
+                "id": "zerocmd",
+                "type": "text",
+                "label": "CN19",
+                "value": "G10 L20 P0 #",
+                "help": "CN11"
+            },
+            {
+                "id": "jogstopcmd",
+                "type": "text",
+                "label": "CN23",
+                "value": "#JOGCANCEL#",
+                "help": "S97"
+            }
+        ]
+    }
+}

@@ -1,0 +1,89 @@
+{
+ "settings": {
+  "language": "default",
+  "theme": "default",
+  "autoload": true,
+  "mobileview": false,
+  "audio": false,
+  "hapticfeedback": false,
+  "audiofeedback": false,
+  "showinformationpage": true,
+  "showmachinesettings": true,
+  "emergencystop": "\u001b.K",
+  "fixedpanels": false,
+  "panelsorder": [
+   {
+    "id": "Files",
+    "name": "files"
+   },
+   {
+    "id": "Terminal",
+    "name": "terminal"
+   },
+   {
+    "id": "Jog",
+    "name": "jog",
+    "value": "jog"
+   },
+   {
+    "id": "Status",
+    "name": "status"
+   },
+   {
+    "id": "Notifications",
+    "name": "notification"
+   },
+   {
+    "id": "Macros",
+    "name": "macros"
+   },
+   {
+    "id": "Extracontents",
+    "name": "extracontents"
+   }
+  ],
+  "enablepolling": true,
+  "pollingcmds": [
+   {
+    "id": "fyhfxfxeg",
+    "name": "Buffer Space",
+    "cmds": "\u001b.B",
+    "refreshtime": "1000"
+   },
+   {
+    "id": "zokiafdvo",
+    "name": "position",
+    "cmds": "OA;",
+    "refreshtime": "2000"
+   }
+  ],
+  "showterminalpanel": true,
+  "openterminalonstart": true,
+  "verbose": true,
+  "autoscroll": true,
+  "showfilespanel": true,
+  "openfilesonstart": true,
+  "filesfilter": "txt;hpgl;plt",
+  "flashfs": false,
+  "directsd": true,
+  "showjogpanel": true,
+  "openjogonstart": true,
+  "showx": true,
+  "showy": true,
+  "showz": true,
+  "showa": false,
+  "showb": false,
+  "showc": false,  
+  "xyfeedrate": "1000",
+  "zfeedrate": "1000",
+  "afeedrate": "1000",
+  "bfeedrate": "1000",
+  "cfeedrate": "1000",
+  "homesingleaxis": false,
+  "homecmd": "PU0,0;",
+  "zerocmd": "PU0,0;",
+  "jogstopcmd": "\u001b.K",
+  "showstatuspanel": true,
+  "openstatusonstart": true
+ }
+}
