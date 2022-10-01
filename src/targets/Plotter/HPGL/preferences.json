@@ -30,23 +30,16 @@
                         "id": "homecmd",
                         "type": "text",
                         "label": "CN10",
-                        "value": "$H#",
+                        "value": "PU0,0;",
                         "help": "CN11"
                     }
                 ]
             },
             {
-                "id": "zerocmd",
-                "type": "text",
-                "label": "CN19",
-                "value": "G10 L20 P0 #",
-                "help": "CN11"
-            },
-            {
                 "id": "jogstopcmd",
                 "type": "text",
                 "label": "CN23",
-                "value": "#JOGCANCEL#",
+                "value": "ESC.K",
                 "help": "S97"
             }
         ]
